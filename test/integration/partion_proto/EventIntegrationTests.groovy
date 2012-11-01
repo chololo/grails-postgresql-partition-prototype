@@ -4,8 +4,6 @@ import grails.test.*
 
 class EventIntegrationTests extends GroovyTestCase 
 {
-	def transactional = false
-	
 	def eventList = []
 	
     protected void setUp() 
@@ -24,8 +22,6 @@ class EventIntegrationTests extends GroovyTestCase
 
     protected void tearDown() 
 	{
-//		eventList.each { it.delete() }
-		
         super.tearDown()
     }
 
